@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+            #kutu {
+                  background-color: black;
+                  width: 100px;
+                  height: 100px;
+                  color: #ffffff;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  font-size: 3rem;
+                  font-weight: bold;
+                  cursor: crosshair;
+                  border-radius: .5rem;
+            }
+      </style>
+</head>
+
+<body>
+      <div id="kutu" onclick="yap()">100</div>
+      <script>
+            let k = document.getElementById("kutu");
+            let x = 100;
+            function yap() {
+                  x = x + 1;
+                  k.textContent = x
+            }
+      </script>
+
+
+
+</body>
+
+</html>
