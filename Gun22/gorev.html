@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Gorev 1</title>
+</head>
+
+<body>
+      <script src="../ortak/yaz.js"></script>
+      <script>
+            //1.
+            let gorev = [4, 8, 15, 16, 23, 42];
+            ciz(gorev);
+            //2.
+            gorev.unshift(10);
+            ciz(gorev);
+            //3.
+            gorev.push(99);
+            ciz(gorev);
+            //4.
+            gorev.splice(2, 3);
+            ciz(gorev);
+            //5.
+            gorev.splice(3, 0, 77);
+            ciz(gorev);
+
+            yaz("başı: " + gorev.shift());
+            ciz(gorev);
+            yaz("sonu: " + gorev.pop());
+            ciz(gorev);
+      </script>
+</body>
+
+</html>

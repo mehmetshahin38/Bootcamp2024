@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Diziler</title>
+</head>
+
+<body>
+      <script src="../ortak/yaz.js"></script>
+      <script>
+            let apartman = ["betül", "güneş", "metin", "burak"];
+            ciz("Apartmandaki kişi sayısı: " + apartman.length)
+            ciz("dizi elemanları: " + apartman.toString());
+            //ciz("Apartmana eleman ekliyoruz: canap")
+            apartman.push("canap");
+            ciz("canap eklendi:<br>" + apartman);
+            ciz("dizinin 3 elemanı: " + apartman[3]);
+            apartman[1] = "mahmut";
+            ciz("apartmanın 1.indexine mahmut taşındı:<br>" + apartman);
+
+            apartman.unshift("altuğ");
+            ciz(apartman);
+
+            let ilki = apartman.shift();
+            yaz("silinen: " + ilki);
+            ciz("dizinin ilk elemanını sildik: " + apartman);
+
+            let sonu = apartman.pop();
+            yaz("silinen: " + sonu);
+            ciz("dizinin ilk elemanını sildik: " + apartman);
+
+            // dizinin 2.indeksindeki 1 elemanı sil
+            apartman.splice(2, 1);
+            ciz(apartman);
+
+            yaz("2.indeksine sezai ismini koy: ");
+            apartman.splice(2, 0, "sezai");
+            ciz(apartman);
+
+      </script>
+</body>
+
+</html>
